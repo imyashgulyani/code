@@ -23,6 +23,7 @@ public class queue_array {
             System.out.print("queue is empty");
             return;
         }
+        System.out.print("dequeue element is"+arr[front-1]);
         if(front==rear)
         {
             front=-1;
@@ -30,7 +31,7 @@ public class queue_array {
             return;
         }
         front++;
-        System.out.print("dequeue element is"+arr[front-1]);
+        
     }
     void display()
     {

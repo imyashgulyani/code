@@ -4,7 +4,7 @@ public class queue_array {
     int arr[]=new int[5];
     void enqueue(int a)
     {
-        if(rear==4)
+        if(rear==arr.length-1)
         {
             System.out.print("queue is full");
             return;
@@ -30,6 +30,7 @@ public class queue_array {
             return;
         }
         front++;
+        System.out.print("dequeue element is"+arr[front]);
     }
     void display()
     {
@@ -80,6 +81,10 @@ public class queue_array {
                 {
                     b=0;
                     break;
+                }
+                default:
+                {
+                    System.out.print("invalid case");
                 }
             }
         }

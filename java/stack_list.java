@@ -32,7 +32,7 @@ public class stack_list {
         }
         else
         {
-            System.out.print("popped element is "+top.data);
+            System.out.println("popped element is "+top.data);
             top=top.next;
         }
     }

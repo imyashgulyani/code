@@ -12,5 +12,5 @@
 
 --     SELECT c AS Addition;
 -- END ;
--- CALL add_numbers();
-show databases;
+CALL add_numbers();
+-- show databases;

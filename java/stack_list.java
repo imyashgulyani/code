@@ -47,6 +47,7 @@ public class stack_list {
         while(temp!=null)
         {
             System.out.print(temp.data+" ");
+            System.out.println();
             temp=temp.next;
         }
     }

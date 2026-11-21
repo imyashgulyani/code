@@ -30,7 +30,7 @@ public class queue_array {
             return;
         }
         front++;
-        System.out.print("dequeue element is"+arr[front]);
+        System.out.print("dequeue element is"+arr[front-1]);
     }
     void display()
     {

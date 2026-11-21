@@ -38,6 +38,11 @@ public class stack_list {
     }
     void display()
     {
+        if(top==null)
+        {
+            System.out.print("stack is empty");
+            return;
+        }
         node temp=top;
         while(temp!=null)
         {
@@ -82,6 +87,10 @@ public class stack_list {
                 {
                     b=0;
                     break;
+                }
+                default:
+                {
+                    System.out.print("invalid case");
                 }
             }
         }    

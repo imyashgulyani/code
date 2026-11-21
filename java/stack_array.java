@@ -23,10 +23,10 @@ public class stack_array {
     {
         stack_array a=new stack_array();
         int ch;
-        System.out.print("enter case");
         ch=ob.nextInt();
         while(ch!=0)
         {
+            System.out.print("enter case");
             System.out.println("enter 1 for push");
             System.out.println("enter 2 for pop");
             System.out.println("enter 3 for exit");

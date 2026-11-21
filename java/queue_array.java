@@ -18,10 +18,15 @@ public class queue_array {
     }
     void dequeue()
     {
-        
+        if(front==-1)
+        {
+            System.out.print("queue is empty");
+            return;
+        }
+        front++;
     }
     public static void main(String[] args)
     {
-
+        
     }
 }

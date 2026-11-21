@@ -1,0 +1,24 @@
+import java.util.*;
+public class areas_two 
+{
+    static Scanner ob=new Scanner(System.in);
+    void areas(float r)
+    {
+        System.out.println("area of circle is ="+3.14*(r*r));
+    }
+    void areas(int a)
+    {
+        System.out.println("area of square is="+a*a);
+    }
+    void areas(float a,float b)
+    {
+        System.out.println("area of rectangle is="+a*b);
+    }
+    public static void main(String[] args)
+    {
+        areas_two a1=new areas_two();
+        a1.areas(3.41432f);
+        a1.areas(9);
+        a1.areas(7.6767f,7.6767f);
+    }
+}

@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+class A
+{
+    int a,c;
+    public:
+    class B
+    {
+        int b;
+        public:
+        void input()
+        {
+            cin>>a;
+            cin>>b;
+        }
+        int getb()
+        {
+            return b;
+        }
+    }b1;
+    void sum()
+    {
+        c=a+b1.getb();
+    }
+    void disp()
+    {
+
+    }
+}a1;
+int main()
+{
+    a1.b1.input();
+    a1.sum();
+}

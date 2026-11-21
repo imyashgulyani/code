@@ -1,0 +1,48 @@
+public class cons_new
+{
+    public static void main(String[] args){
+    cons2 c1= new cons2();
+    c1.input(10,12);
+    c1.calc();
+    c1.disp();  
+    cons3 c2= new cons3();
+    c2.input(10,12);
+    c2.calc();
+    c2.disp();
+    }
+}
+class cons2
+{
+    private int a,b,c;
+    void input(int a, int b)
+    {
+        this.a=a;
+        this.b=b;
+    }
+    void calc()
+    {
+        c = a+b;
+    }
+    void disp()
+    {
+        System.out.println("Sum: " + c);
+    }
+}
+
+class cons3
+{
+    private int a,b,c;
+    void input(int a, int b)
+    {
+        this.a=a;
+        this.b=b;
+    }
+    void calc()
+    {
+        c = a*b;
+    }
+    void disp()
+    {
+        System.out.println("Product: " + c);
+    }
+}

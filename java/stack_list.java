@@ -35,6 +35,15 @@ public class stack_list {
             top=top.next;
         }
     }
+    void display()
+    {
+        node temp=top;
+        while(temp!=null)
+        {
+            System.out.print(temp.data+" ");
+            temp=temp.next;
+        }
+    }
     public static void main(String[] args)
     {
 

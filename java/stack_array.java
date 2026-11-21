@@ -5,6 +5,11 @@ public class stack_array {
     static Scanner ob=new Scanner(System.in);
     void push(int a)
     {
+        if(top==4)
+        {
+            System.out.print("stack is full");
+            return;
+        }
         top++;
         arr[top]=a;
     }

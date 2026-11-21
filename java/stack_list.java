@@ -46,6 +46,43 @@ public class stack_list {
     }
     public static void main(String[] args)
     {
-
+        int b=1;
+        stack_list a=new stack_list();
+        Scanner ob=new Scanner(System.in);
+        while(b!=0)
+        {
+            int ch;
+            System.out.println("enter 1 for push");
+            System.out.println("enter 2 for pop");
+            System.out.println("enter 3 for display");
+            System.out.println("enter 0 for exit");
+            System.out.print("enter case");
+            ch=ob.nextInt();
+            switch(ch)
+            {
+                case 1:
+                {
+                    System.out.print("enter element to push");
+                    int n=ob.nextInt();
+                    a.push(n);
+                    break;
+                }
+                case 2:
+                {
+                    a.pop();
+                    break;
+                }
+                case 3:
+                {
+                    a.display();
+                    break;
+                }
+                case 0:
+                {
+                    b=0;
+                    break;
+                }
+            }
+        }    
     }
 }

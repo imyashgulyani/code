@@ -1,11 +1,12 @@
 import java.util.*;
 public class circular_queue {
+    int size=4;
     int front=-1,rear=-1;
-    int [] queue=new int[10];
+    int [] queue=new int[size];
     static Scanner ob=new Scanner(System.in);
     void enqueue(int a)
     {
-        if(rear==(front+1)%10)
+        if(front==(rear+1)%size)
         {
             System.out.println("Queue is full");
         }
@@ -15,7 +16,7 @@ public class circular_queue {
             {
                 front=0;
             }
-            rear=(rear+1)%10;
+            rear=(rear+1)%size;
             queue[rear]=a;
         }
     }
@@ -35,7 +36,7 @@ public class circular_queue {
             }
             else
             {
-                front=(front+1)%10;
+                front=(front+1)%size;
             }
         }
     }
@@ -52,7 +53,7 @@ public class circular_queue {
             while(i!=rear)
             {
                 System.out.print(queue[i]+" ");
-                i=(i+1)%10;
+                i=(i+1)%size;
             }
             System.out.print(queue[rear]);
         }
